@@ -9,13 +9,13 @@ function TestimonialCard(props) {
             <div className="bg-white  py-8 px-7">
                 <div className="flex gap-x-1.5 mb-5">
                     {
-                        Array(rate).fill().map((_, id) => <AiFillStar className="text-sm text-accent" />)
+                        Array(rate).fill().map((_, id) => <AiFillStar key={id} className="text-sm text-accent" />)
                     }
                     {
-                        Array(5 - rate).fill().map((_, id) => <AiFillStar className="text-sm text-gray-300" />)
+                        Array(5 - rate).fill().map((_, id) => <AiFillStar key={id} className="text-sm text-gray-300" />)
                     }
                 </div>
-                <p className="text-base lg:text-lg leading-relaxed text-gray-400 text-justify italic">has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries but also the on leap into electronic typesetting.</p>
+                <p className="text-base lg:text-lg leading-relaxed text-gray-400 text-justify italic">has been the standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries but also the on leap into electronic typesetting.</p>
                 <div className="mt-10 flex items-center">
                     <div className="basis-[56px] border">
 

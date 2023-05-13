@@ -4,6 +4,7 @@ import ProductDetails from "@/components/ProductDetails/ProductDetails"
 import RelatedProduct from "@/components/RelatedProduct/RelatedProduct"
 
 function singleProduct({ product, relatedProduct }) {
+    console.log(product)
     return (
         <>
             <Meta title={product.title} />
@@ -17,10 +18,11 @@ function singleProduct({ product, relatedProduct }) {
 export default singleProduct
 
 
-export async function getServerSideProps(context) {
-    const res = await fetch('https://fakestoreapi.com/products/' + context.params.id);
-    const resReletedProduct = await fetch('https://fakestoreapi.com/products');
+export async function getStaticProps(context) {
+    const res = await fetch(`https://fakestoreapi.com/products/${context.params.id} `);
     const product = await res.json()
+
+    const resReletedProduct = await fetch('https://fakestoreapi.com/products');
     const reletedProduct = await resReletedProduct.json()
     return {
         props: {
@@ -31,12 +33,13 @@ export async function getServerSideProps(context) {
 }
 
 
-export async function getStaticPath() {
+export async function getStaticPaths() {
     const res = await fetch('https://fakestoreapi.com/products');
-    const ids = product.map((item) => item.id)
+    const product = await res.json()
+    const ids = product.map((item) => item.title)
     const path = ids.map((id) => ({ params: { id: id.toString() } }))
     return {
-        path,
+        paths: path,
         fallback: false
     };
 }

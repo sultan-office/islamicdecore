@@ -21,7 +21,7 @@ function about() {
                         </div>
                         <div class="mt-10 lg:mt-0 lg:w-1/2 xl:w-7/12">
                             <h1 class="font-medium text-black mb-3 text-xl sm:text-3xl">What is e-commerce business?</h1>
-                            <p class="text-base text-gray-900 leading-7 mb-2.5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries but also the on leap into electronic typesetting.</p>
+                            <p class="text-base text-gray-900 leading-7 mb-2.5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries but also the on leap into electronic typesetting.</p>
                             <ul class="text-base text-gray-900 leading-7 list-disc ml-5 mb-7">
                                 <li>slim body with metal cover</li>
                                 <li>latest Intel Core i5-1135G7 processor (4 cores / 8 threads)</li>
@@ -41,8 +41,8 @@ function about() {
                     <div class="flex flex-col gap-y-10 lg:flex-row items-center pb-10 lg:pb-0 gap-7 mt-20">
                         <div class="w-full lg:w-1/2 xl:w-7/12 order-last lg:order-first">
                             <h1 class="font-medium text-qblack mb-3 text-xl sm:text-3xl">Our Mission?</h1>
-                            <p class="text-base text-gray-800 leading-7 mb-3 text-justify ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type sp also the on leap into electronic typesetting.</p>
-                            <p class="text-base text-gray-800 leading-7 pb-5 text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has survived not only five centuries but also the on leap into electronic typesetting.</p>
+                            <p class="text-base text-gray-800 leading-7 mb-3 text-justify ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type sp also the on leap into electronic typesetting.</p>
+                            <p class="text-base text-gray-800 leading-7 pb-5 text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard has survived not only five centuries but also the on leap into electronic typesetting.</p>
 
                             <Link href="/contact" className="py-3 px-8 inline-block bg-accent">
                                 Contact Us
@@ -66,12 +66,12 @@ function about() {
                         modules={[Autoplay]}
                         speed={700}
                         autoplay={{
-                            delay : 2000,                      
-                            
+                            delay: 2000,
+
                         }}
                         breakpoints={{
-                            768 : {
-                                slidesPerView : 2
+                            768: {
+                                slidesPerView: 2
                             },
                         }}
                     >

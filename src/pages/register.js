@@ -8,8 +8,8 @@ import Breadcrumb from "@/components/Breadcrumb/Breadcrumb";
 function register() {
 
     return (
-        <>  
-            <Breadcrumb pages={['Register']}/>
+        <>
+            <Breadcrumb pages={['Register']} />
             <section className="py-20 bg-gray-100">
                 <div className="container">
                     <div className="w-full md:w-[600px] mx-auto">
@@ -43,17 +43,17 @@ function register() {
                                     {/* First name */}
                                     <div>
                                         <label className="mb-2 block" htmlFor="firstName">First Name <span className="text-red-600">*</span></label>
-                                        <input id="firstName" type="text" className="form-input" required/>
+                                        <input id="firstName" type="text" className="form-input" required />
                                     </div>
                                     {/* Last name */}
                                     <div className="mt-4">
                                         <label className="mb-2 block" htmlFor="lastName">First Name <span className="text-red-600">*</span></label>
-                                        <input id="text" type="lastName" className="form-input" required/>
+                                        <input id="text" type="lastName" className="form-input" required />
                                     </div>
 
                                     {/* Last name */}
                                     <div className="mt-4">
-                                        <input id="newsletter" type="checkbox" required/>
+                                        <input id="newsletter" type="checkbox" required />
                                         <label className="inline-block pl-3" htmlFor="lastName">Sign Up for Newsletter</label>
                                     </div>
                                 </div>
@@ -62,37 +62,37 @@ function register() {
                                     {/* Email name */}
                                     <div>
                                         <label className="mb-2 block" htmlFor="email">Email <span className="text-red-600">*</span></label>
-                                        <input id="email" type="email" className="form-input" required/>
+                                        <input id="email" type="email" className="form-input" required />
                                     </div>
                                     {/* Address */}
                                     <div className="mt-4">
                                         <label className="mb-2 block" htmlFor="address">Address <span className="text-red-600">*</span></label>
-                                        <input id="address" type="text" className="form-input" required/>
+                                        <input id="address" type="text" className="form-input" required />
                                     </div>
                                     {/* Password */}
                                     <div className="mt-4">
                                         <label className="mb-2 block" htmlFor="lastName">Password <span className="text-red-600">*</span></label>
-                                        <input id="Password" type="password" className="form-input" required/>
+                                        <input id="Password" type="password" className="form-input" required />
                                         <p className={`bg-gray-100 py-1 px-2 text-sm`}>Password Strength: {`No Password`}</p>
                                     </div>
 
                                     {/* Confirm Password name */}
                                     <div className="mt-4">
                                         <label className="mb-2 block" htmlFor="ConfirmPassword">Confirm Password<span className="text-red-600">*</span></label>
-                                        <input id="ConfirmPassword" type="password" className="form-input" required/>
+                                        <input id="ConfirmPassword" type="password" className="form-input" required />
                                     </div>
                                     {/* Remember Login */}
                                     <div className="mt-4">
-                                        <input id="remember" type="checkbox" required/>
-                                        <label className="inline-block pl-3" htmlFor="remember">Remember Me What's this?</label>
+                                        <input id="remember" type="checkbox" required />
+                                        <label className="inline-block pl-3" htmlFor="remember">Remember Me What`&apos;`s this?</label>
                                     </div>
                                     {/* Captcha Login */}
                                     <div className="mt-4">
                                         <label className="mb-2 block" htmlFor="captcha">Please type the letters and numbers below<span className="text-red-600">*</span></label>
-                                        <input id="captcha" type="password" className="form-input" required/>
+                                        <input id="captcha" type="password" className="form-input" required />
                                     </div>
                                     <div className="mt-4 flex items-center">
-                                        <Captcha/>
+                                        <Captcha />
                                     </div>
                                 </div>
                                 <button type="submit" className="bg-accent py-3 w-full block text-center mt-5">Create An Account</button>

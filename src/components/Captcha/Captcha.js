@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { createCanvas } from 'canvas';
-import {FiRefreshCcw} from 'react-icons/fi'
+import { FiRefreshCcw } from 'react-icons/fi'
 
 const Captcha = () => {
   const [captchaText, setCaptchaText] = useState('');
@@ -55,7 +54,7 @@ const Captcha = () => {
         <canvas ref={canvasRef} width="170" height="50" className='opacity-30'></canvas>
       </div>
       <button className="text-xl border center-child h-[50px] w-[50px]" type="button" onClick={generateCaptcha}>
-        <FiRefreshCcw/>
+        <FiRefreshCcw />
       </button>
     </div>
   );
